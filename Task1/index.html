@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('image.png'); /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff; /* Changed text color to white */
+        }
+        h2 {
+            color: rgb(237, 14, 204); /* Change text color of h2 to white */
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 50px auto 0; /* Added margin-top of 50px */
+            padding: 20px 20px 50px; /* Increased padding at the bottom */
+            background-color: #fff; /* White background color */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Optional: Add shadow effect */
+            background-color:#401482
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color:#401482
+            border-bottom: 2px solid #ccc;
+            color: #ffffff; /* Changed text color to white */
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #ffffff; /* Changed text color to white */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            color: #ffffff; /* Changed text color to white */
+        }
+        form label {
+            margin-bottom: 5px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #b38aef;
+            color: #ffffff; /* Changed text color to white */
+        }
+        form textarea {
+            height: 150px;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-group.inline {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .form-group.inline label {
+            flex-basis: 30%;
+            margin-right: 10px;
+        }
+        .form-group.inline input {
+            flex-basis: 70%;
+        }
+        .contact-info {
+            background-color:#401482;
+            padding: 20px;
+            border-radius: 5px;
+            color: #ffffff; /* Changed text color to white */
+        }
+        .social-media-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-media-icons img {
+            width: 40px;
+            margin: 0 10px;
+        }
+        
+        /* Style placeholder text color */
+        ::placeholder {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div style="display: flex;">
+                <div style="flex: 1; padding: 10px;">
+                    <h2>JUST SAY HELLO</h2>
+                    <h3>Just let us know more about you</h3>
+                    <form>
+                        <div class="form-group inline">
+                            <input type="text" id="fname" name="fname" placeholder="First name">
+                            <label for="lname"></label>
+                            <input type="text" id="lname" name="lname" placeholder="Last name">
+                        </div>
+                        <div class="form-group inline">
+                            <input type="email" id="email" name="email" placeholder="Mail">
+                            <label for="contact"></label>
+                            <input type="tel" id="contact" name="contact" placeholder="Contact number">
+                        </div>
+                        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+                        <input type="submit" value="Submit">
+                        
+                    </form>
+                </div>
+
+                <div style="flex: 1; padding: 10px;">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info">
+                        <p>CSED MNNIT Allahabad<br>Prayagraj-211004</p>
+                        <p>Call Us: +91-4794685713</p>
+                    </div>
+                    <h2>Follow Us</h2>
+                    <div class="social-media-icons">
+                        <img src="image1.png" alt="Facebook">
+                        <img src="image2.png" alt="Instagram">
+                        <img src="image3.png" alt="LinkedIn">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
